@@ -11,6 +11,7 @@ Description
 
 It's a very simple blog created with Django for demostrative purposes,
 development versio.
+
 __Not for production use__.
 
 Features
@@ -24,6 +25,7 @@ Features
 How to use
 ===========
 
+   Make migrations and migrate.
    Run Django development server and enter into your browser 127.0.0.1:8000.
    It's a home page with list of available posts.
 
