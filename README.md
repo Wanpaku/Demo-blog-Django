@@ -2,6 +2,7 @@ About Demo blog
 ========================
 
 [![Django CI](https://github.com/Wanpaku/Demo-blog-Django/actions/workflows/django.yml/badge.svg)](https://github.com/Wanpaku/Demo-blog-Django/actions/workflows/django.yml)
+[![CodeQL Advanced](https://github.com/Wanpaku/Demo-blog-Django/actions/workflows/codeql.yml/badge.svg)](https://github.com/Wanpaku/Demo-blog-Django/actions/workflows/codeql.yml)
 
 Screenshots
 ===========
