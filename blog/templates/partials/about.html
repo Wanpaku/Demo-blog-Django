@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block title %} {% translate 'About' %} {% endblock %}
+
+{% block content %}
+<section id="about">
+	<p>{% translate 'The blog created for demostration purposes. This is development version.' %}</p>
+	{% translate 'Not for production use.' as warning %}
+	<p> <h2>{{ warning }}</h2> </p>
+</section>
+{% endblock %}

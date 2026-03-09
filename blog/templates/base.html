@@ -1,0 +1,45 @@
+{% load blog_tags %}
+{% load static %}
+{% load i18n %}
+<!doctype html>
+<html>
+	<head>
+		<title>{% block title %}{% endblock %}</title>
+		<link href="{% static 'css/blog.css' %}" rel="stylesheet">
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		{% include "partials/nav_top.html" %}
+		<section id="content">
+			<aside id="sidebar">
+				<h2>{% translate 'Demo blog' %}</h2>
+				<p>
+					{% translate 'Total amount of posts: ' %}{% total_posts_amount %}
+				</p>
+				<p>
+					<a href="{% url "blog:post_feed" %}">
+						{% translate 'Subscribe to RSS feed' %}
+					</a>
+				</p>
+				<h3>{% translate 'Latest updated posts:' %}</h3>
+				{% show_latest_posts %}
+				<h3>{% translate 'Most commented posts:' %}</h3>
+				{% get_most_commented_posts as most_commented_posts %}
+				<ul>
+					{% for post in most_commented_posts %}
+					<li>
+						<a href="{{ post.get_absolute_url }}">{{ post.article_title }}</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</aside>
+
+			<main>
+				{% block content %}
+				{% endblock %}
+			</main>
+
+		</section>
+		{% include "partials/footer.html" %}
+	</body>
+</html>

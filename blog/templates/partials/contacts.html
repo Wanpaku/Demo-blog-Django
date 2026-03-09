@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% load blog_tags %}
+
+{% block title %} {% translate 'Contacts' %} {% endblock %}
+
+{% block content %}
+<address id="contacts">
+	<p> {% translate 'Phone: ' %} +123456789 </p>
+	<p> {% translate 'Email: ' %} mail@example.com </p>
+</address>
+{% endblock %}

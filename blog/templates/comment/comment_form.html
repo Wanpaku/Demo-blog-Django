@@ -1,0 +1,45 @@
+{% load static %}
+{% load i18n %}
+{% load blog_tags %}
+
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<div id="comments">
+			<details>
+				<summary>{% translate 'Comments total' %} ({{ active_comments.count}})</summary>
+				<ul>
+					{% for comment in active_comments %}
+					<li name="comment_item">
+						<div class="comment-section">
+							<p><strong>{{ comment.user_name }}</strong> <small>{{ comment.comment_created|date:"F d, Y H:i" }}</small></p>
+							<p>{{ comment.comment_body | convert_markdown }}</p>
+						</div>
+					</li>
+					{% endfor %}
+				</ul>
+				{% if active_comments.count == 0 %}
+				<p>{% translate 'No comments yet.' %}</p>
+				{% endif %}
+			</details>
+		</div>
+
+
+		{% if user.is_authenticated %}
+        <div class="comment-form-section">
+            <h4>{% translate 'Leave a comment' %}</h4>
+            <form action="" method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="comment_submit">{% translate 'Submit Comment' %}</button>
+            </form>
+        </div>
+		{% else %}
+        <p>{% translate 'Please log in to leave a comment' %}</p>
+		{% endif %}
+	</body>
+</html>

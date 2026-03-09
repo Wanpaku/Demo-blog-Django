@@ -1,0 +1,16 @@
+<!-- templates/404.html -->
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}
+{% translate 'Page Not Found' %}
+{% endblock %}
+
+{% block content %}
+<section class="errors">
+<h1>{% translate 'Error 404: Page Not Found' %}</h1>
+<p>{% translate 'The page you requested does not exist.' %}</p>
+</section>
+{% endblock %}
+

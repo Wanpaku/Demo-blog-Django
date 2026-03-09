@@ -1,0 +1,45 @@
+{% load static %}
+{% load i18n %}
+<!doctype html>
+<html>
+	<head>
+		<link href="{% static 'css/blog.css' %}" rel="stylesheet">
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<header>
+			<nav class="top-navigation">
+				<a class="nav_link" href="{% url 'blog:home' %}"> {% translate "Home" %} </a>
+				<section name="login_section"><a class="nav_link" href="{% url 'admin:index' %}">
+					{% if user.is_authenticated %}
+					{% translate 'Account' %}
+					{% else %}
+					{% translate "Sign in" %}
+					{% endif %}
+				</a>
+				{% if user.is_authenticated %}
+				<form action="{% url 'logout' %}" method="POST">
+					{% csrf_token %}
+					<button name="logout" type="submit">{% translate 'Logout' %}</button>
+				</form>
+				{% endif %}
+				</section>
+				<form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+					<input name="next" type="hidden" value="{{ redirect_to }}">
+					<select name="language">
+						{% get_current_language as LANGUAGE_CODE %}
+						{% get_available_languages as LANGUAGES %}
+						{% get_language_info_list for LANGUAGES as languages %}
+						{% for language in languages %}
+						<option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+							{{ language.name_local }} ({{ language.code }})
+						</option>
+						{% endfor %}
+					</select>
+					<input name="language_switch" type="submit" value="{% translate 'Switch' %}">
+				</form>
+
+			</nav>
+		</header>
+	</body>
+</html>

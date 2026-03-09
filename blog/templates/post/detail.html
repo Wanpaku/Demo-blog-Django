@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% load blog_tags %}
+
+{% block title %} {{post_detail.article_title}} {% endblock %}
+
+{% block content %}
+<article id="article_detail">
+	<h1>{{ post_detail.article_title }}</h1>
+	<p class="date">
+		{% blocktranslate with published=post_detail.article_published author=post_detail.article_author %}
+		Published {{ published }} by {{ author }}
+		{% endblocktranslate %}
+	</p>
+	{{ post_detail.article_body | convert_markdown }}
+</article>
+<h2 id="similar_posts">{% translate 'Similar posts:' %}</h2>
+<section name="similar_post_section">
+{% for post in similar_posts %}
+<p>
+	<a name="similar_post" href="{{ post.get_absolute_url }}">	{{ post.article_title }}</a>
+</p>
+{% empty %}
+{% translate 'There are no similar posts yet.' %}
+{% endfor %}
+</section>
+{% include "comment/comment_form.html" %}
+{% endblock %}

@@ -1,0 +1,15 @@
+<!-- templates/403.html -->
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}
+{% translate 'Permission denied' %}
+{% endblock %}
+
+{% block content %}
+<section class="errors">
+	<h1>{% translate 'Error 403: Permission denied' %}</h1>
+	<p>{% translate "You don't have permission to access this page." %}</p>
+</section>
+{% endblock %}
