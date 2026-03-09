@@ -1,0 +1,334 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-08 17:32+0000\n"
+"PO-Revision-Date: 2026-03-09 11:42+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.8\n"
+
+#: blog/feeds.py:10 blog/templates/base.html:15 blog/templates/post/list.html:7
+#: blog/templates/post/list.html:10
+msgid "Demo blog"
+msgstr "Демо блог"
+
+#: blog/feeds.py:12
+msgid "New posts from Demo blog."
+msgstr "Нові статті з Демо блога."
+
+#: blog/forms.py:13
+msgid "Write your comment here..."
+msgstr "Напишіть свій коментар тут..."
+
+#: blog/models.py:16
+msgid "draft"
+msgstr "чернетка"
+
+#: blog/models.py:17
+msgid "published"
+msgstr "опубліковане"
+
+#: blog/models.py:20
+msgid "article title"
+msgstr "назва"
+
+#: blog/models.py:24
+msgid "article slug"
+msgstr "слаґ"
+
+#: blog/models.py:30
+msgid "article author"
+msgstr "автор"
+
+#: blog/models.py:33
+msgid "article body"
+msgstr "стаття"
+
+#: blog/models.py:35
+msgid "article published"
+msgstr "дата публікації"
+
+#: blog/models.py:38
+msgid "article created"
+msgstr "дата створення"
+
+#: blog/models.py:41
+msgid "article updated"
+msgstr "дата оновлення"
+
+#: blog/models.py:47
+msgid "article status"
+msgstr "статус"
+
+#: blog/models.py:53
+msgid "post"
+msgstr "пост"
+
+#: blog/models.py:54
+msgid "posts"
+msgstr "пости"
+
+#: blog/models.py:98
+msgid "related post"
+msgstr "пов'язаний пост"
+
+#: blog/models.py:100
+msgid "user name"
+msgstr "ім'я користувача"
+
+#: blog/models.py:101
+msgid "user email"
+msgstr "пошта користувача"
+
+#: blog/models.py:103
+msgid "comment body"
+msgstr "коментар"
+
+#: blog/models.py:106
+msgid "comment created"
+msgstr "коментар створено"
+
+#: blog/models.py:109
+msgid "comment updated"
+msgstr "коментар оновлено"
+
+#: blog/models.py:111
+msgid "is active"
+msgstr "активний"
+
+#: blog/models.py:114
+msgid "comment"
+msgstr "коментар"
+
+#: blog/models.py:115
+msgid "comments"
+msgstr "коментарі"
+
+#: blog/models.py:123
+#, python-brace-format
+msgid "Comment by {} on {}"
+msgstr "Коментар від {} щодо {}"
+
+#: blog/templates/400.html:7
+msgid "Bad Request"
+msgstr "Поганий запит"
+
+#: blog/templates/400.html:12
+msgid "Error 400: Bad Request"
+msgstr "Помилка: 400 : Неправильний запит"
+
+#: blog/templates/400.html:13
+msgid "The server cannot interpret the request due to malformed syntax."
+msgstr "Сервер не може обробити запит, що містить неправильний синтаксис."
+
+#: blog/templates/403.html:7
+msgid "Permission denied"
+msgstr "У доступ відмовлено"
+
+#: blog/templates/403.html:12
+msgid "Error 403: Permission denied"
+msgstr "Помилка 403: У доступі відмовлено"
+
+#: blog/templates/403.html:13
+msgid "You don't have permission to access this page."
+msgstr "У вас немає дозволу для доступу до цієї сторінки."
+
+#: blog/templates/404.html:7
+msgid "Page Not Found"
+msgstr "Сторінку не знайдено"
+
+#: blog/templates/404.html:12
+msgid "Error 404: Page Not Found"
+msgstr "Помилка 404: Сторінку не знайдено"
+
+#: blog/templates/404.html:13
+msgid "The page you requested does not exist."
+msgstr "Запитуваної вами сторінки не існує."
+
+#: blog/templates/500.html:7
+msgid "Internal Server Error"
+msgstr "Внутрішня помилка сервера"
+
+#: blog/templates/500.html:12
+msgid "Error 500: Internal Server Error"
+msgstr "Помилка 500: Внутрішня помилка сервера"
+
+#: blog/templates/500.html:13
+msgid "Error occurs at the server side."
+msgstr "На сервері сталася помилка."
+
+#: blog/templates/base.html:17
+msgid "Total amount of posts: "
+msgstr "Загальна кількість статей: "
+
+#: blog/templates/base.html:21
+msgid "Subscribe to RSS feed"
+msgstr "Підписатися на стрічку RSS"
+
+#: blog/templates/base.html:24
+msgid "Latest updated posts:"
+msgstr "Останні оновлені статті:"
+
+#: blog/templates/base.html:26
+msgid "Most commented posts:"
+msgstr "Найбільш коментовані статті:"
+
+#: blog/templates/comment/comment_form.html:14
+msgid "Comments total"
+msgstr "Усього коментарів"
+
+#: blog/templates/comment/comment_form.html:26
+msgid "No comments yet."
+msgstr "Поки жодних коментарів."
+
+#: blog/templates/comment/comment_form.html:34
+msgid "Leave a comment"
+msgstr "Написати коментар"
+
+#: blog/templates/comment/comment_form.html:38
+msgid "Submit Comment"
+msgstr "Оприлюднити коментар"
+
+#: blog/templates/comment/comment_form.html:42
+msgid "Please log in to leave a comment"
+msgstr "Будь ласка, увійдіть до облікового запису, щоб написати коментар"
+
+#: blog/templates/partials/about.html:5 blog/templates/partials/footer.html:15
+msgid "About"
+msgstr "Про вебсайт"
+
+#: blog/templates/partials/about.html:9
+msgid ""
+"The blog created for demostration purposes. This is development version."
+msgstr "Цей блог створено для демонстраційних цілей. Це  версія для розробки."
+
+#: blog/templates/partials/about.html:10
+msgid "Not for production use."
+msgstr "Не для виробництва."
+
+#: blog/templates/partials/contacts.html:7
+#: blog/templates/partials/footer.html:16
+msgid "Contacts"
+msgstr "Контакти"
+
+#: blog/templates/partials/contacts.html:11
+msgid "Phone: "
+msgstr "Телефон: "
+
+#: blog/templates/partials/contacts.html:12
+msgid "Email: "
+msgstr "Пошта: "
+
+#: blog/templates/partials/footer.html:14
+#: blog/templates/partials/nav_top.html:12
+msgid "Home"
+msgstr "Домівка"
+
+#: blog/templates/partials/footer.html:18
+msgid "Demo blog © 2026"
+msgstr "Демо блог © 2026"
+
+#: blog/templates/partials/nav_top.html:15
+msgid "Account"
+msgstr "Профіль"
+
+#: blog/templates/partials/nav_top.html:17
+msgid "Sign in"
+msgstr "Увійти"
+
+#: blog/templates/partials/nav_top.html:23
+msgid "Logout"
+msgstr "Вийти"
+
+#: blog/templates/partials/nav_top.html:39
+msgid "Switch"
+msgstr "Перемкнути"
+
+#: blog/templates/post/detail.html:13
+#, python-format
+msgid ""
+"\n"
+"\t\tPublished %(published)s by %(author)s\n"
+"\t\t"
+msgstr ""
+"\n"
+"\tОпубліковано %(published)s, автор:  %(author)s\n"
+"\t"
+
+#: blog/templates/post/detail.html:19
+msgid "Similar posts:"
+msgstr "Схожі статті:"
+
+#: blog/templates/post/detail.html:26
+msgid "There are no similar posts yet."
+msgstr "Схожих статей ще немає."
+
+#: blog/templates/post/list.html:12
+msgid "Post tagged with: "
+msgstr "Статті з мітками: "
+
+#: blog/templates/post/list.html:22
+msgid "Tags: "
+msgstr "Мітки: "
+
+#: blog/templates/post/list.html:31
+#, python-format
+msgid ""
+"\n"
+"\t\tPublished %(data_publish)s by %(author)s\n"
+"\t\t"
+msgstr ""
+"\n"
+"\tОпубліковано %(data_publish)s, автор:  %(author)s\n"
+"\t"
+
+#: blog/templates/post/list.html:41
+msgid "first"
+msgstr "перша"
+
+#: blog/templates/post/list.html:42
+msgid "previous"
+msgstr "попередня"
+
+#: blog/templates/post/list.html:46
+msgid "Page"
+msgstr "Сторінка"
+
+#: blog/templates/post/list.html:46
+msgid "of"
+msgstr "з"
+
+#: blog/templates/post/list.html:50
+msgid "next"
+msgstr "наступна"
+
+#: blog/templates/post/list.html:51
+msgid "last"
+msgstr "остання"
+
+#: demo_blog/settings.py:123
+msgid "Ukrainian"
+msgstr "Українська"
+
+#: demo_blog/settings.py:124
+msgid "English"
+msgstr "Англійська"
+
+#~ msgid "homepage"
+#~ msgstr "домівка"
+
+#~ msgid "Licence"
+#~ msgstr "Ліцензія"
