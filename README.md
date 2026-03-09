@@ -13,7 +13,7 @@ Description
 ===========
 
 It's a very simple blog created with Django for demostrative purposes,
-development versio.
+development version.
 
 __Not for production use__.
 
@@ -40,5 +40,5 @@ Authors
 Requirements
 ============
 
-+ Python 3.14, Django 6, Django-taggit 6.1.0, Markdown 3.10.2
++ Python 3.14, Django 6, Django-taggit 6.1.0, Markdown 3.10.2, Faker 40.5.1
 
